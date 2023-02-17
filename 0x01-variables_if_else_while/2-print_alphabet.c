@@ -6,8 +6,12 @@
  */
 int main(void)
 {
-	char b;
-	for(b ='a'; b <= 'z'; ++b)
-		putchar("%b" , b);
-	return(0);
+	char b= 'a';
+	while(b <= 'z')
+	{
+		putchar(b);
+		b++
+	}
+	putchar("\n");
+	return (0);
 }
