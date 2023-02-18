@@ -12,7 +12,6 @@ int main(void)
 
 	a = 'a';
 	b = 0;
-	
 	while (b < 10)
 	{
 		putchar(b + '0');
