@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int a = 0;
+	int a;
 	
-	while (a < 10)
+	for (a = 0; a < 10; a++)
 	{
 		putchar(a + 48);
 		if (a != 9)
@@ -16,7 +16,6 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
