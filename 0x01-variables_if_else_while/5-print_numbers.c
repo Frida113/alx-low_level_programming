@@ -6,13 +6,14 @@
  */
 int main(void)
 {
-	int n = 0;
+	char c = '0';
 
-	while (n < 10)
+	while (n <= '9')
 	{
-		printf("%d", n);
-		n++;
+		putchar(c);
+		c++;
 	}
-	printf('\n');
+
+	putchar('\n');
 	return (0);
 }
