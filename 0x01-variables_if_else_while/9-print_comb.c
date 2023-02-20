@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 		if (a != 9)
 		{
 			putchar(',');
-			putchar(' ');
+			putchar(" ");
 		}
 		a++;
 
