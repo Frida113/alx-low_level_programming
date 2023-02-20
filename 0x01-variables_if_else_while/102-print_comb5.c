@@ -28,8 +28,12 @@ int main(void)
                 putchar(',');
                 putchar(' ');
             }
-            printf("%d%d", f_d, l_d);
-            printf("%d%d", f_d2, l_d2);
+            putchar(f_d + '0');
+            putchar(l_d + '0');
+            putchar(' ');
+            putchar(f_d2 + '0');
+            putchar(l_d2 + '0');
+
             first_pair = 0;
 
             c2++;
