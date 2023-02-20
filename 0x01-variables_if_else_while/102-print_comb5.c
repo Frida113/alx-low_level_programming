@@ -22,7 +22,7 @@ int main(void)
 		{
 			f_d2 = c2 / 10;
 			l_d2 = c2 % 10;
-			
+
 			if (!first_pair)
 			{
 				putchar(',');
