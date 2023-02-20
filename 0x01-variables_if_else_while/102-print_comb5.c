@@ -1,50 +1,43 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
- *Return: Always 0(Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int c = 0;
-	int f_d;
-	int 1_d;
+    int c = 0;
+    int c2;
+    int f_d, l_d, f_d2, l_d2;
+    int first_pair = 1;
 
-	int c2;
-	int f_d2;
-	int 1_d2;
+    while (c <= 98)
+    {
+        f_d = c / 10;
+        l_d = c % 10;
+        c2 = c + 1;
 
-	while (c <= 98)
-	{
-		f_d = (c / 10 + '0');
-		1_d = (c % 10 + '0');
-		c2 = 0;
-		while (c2 <= 99)
-		{
-			f_d2 = (c2 / 10 + '0');
-			1_d2 = (c2 % 10 + '0');
+        while (c2 <= 99)
+        {
+            f_d2 = c2 / 10;
+            l_d2 = c2 % 10;
 
-			if (c < c2)
-			{
-				putchar(f_d);
-				putchar(1_d);
-				putchar(' ');
-				putchar(f_d2);
-				putchar(1_d2);
+            if (!first_pair)
+            {
+                putchar(',');
+                putchar(' ');
+            }
+            printf("%d%d", f_d, l_d);
+            printf("%d%d", f_d2, l_d2);
+            first_pair = 0;
 
-				if (c != 98)
-				{
-					putchar (',');
-					putchar(' ');
-				}
+            c2++;
+        }
 
-			}
-			c2++;
+        c++;
+    }
 
-		}
-		c++;
-
-	}
-	putchar('\n');
-	return (0);
+    putchar('\n');
+    return (0);
 }
