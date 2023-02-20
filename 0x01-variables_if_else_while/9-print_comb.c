@@ -23,4 +23,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-M-x delete-trailing-whitespace
