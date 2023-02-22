@@ -12,7 +12,6 @@ void print_times_table(int n)
 		for (num = 0; num <= n; num++)
 		{
 			_putchar('0');
-			_putchar(' ');
 
 			for (mult = 1; mult <= n; mult++)
 			{
@@ -37,6 +36,7 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 				_putchar((prod % 10) + '0');
+				_putchar(' ');
 			}
 			_putchar('\n');
 		}
