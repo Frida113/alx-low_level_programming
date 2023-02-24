@@ -1,38 +1,37 @@
 #include <stdio.h>
 
 /**
- * main - prints the 1 - 100 but for the mult of 3 and 5, print Fizz Buzz
+ * main - prints the number from 1 - 100, but for mult of 3 & 5 print Fizz Buzz
  *
- * Return: 0
- */
+ * Return: Always 0 (Success)
+**/
 
 int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 1 ; i < 100 ; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if ((i % 3) == 0 && (i % 5) == 0)
 		{
 			printf("FizzBuzz ");
 		}
-		else if (i % 3 == 0 && !(i % 5 == 0))
+		else if (i % 3 == 0)
 		{
 			printf("Fizz ");
 		}
-		else if (i % 5 == 0 && !(i % 3 == 0))
+		else if (i % 5 == 0)
 		{
 			printf("Buzz ");
 		}
 		else
 		{
-			printf("%d ", i);
+		printf("%d ", i);
 		}
-		if (i != 100)
-			printf(" ");
-		else
-			prinf("\n");
 	}
+
+	printf("Buzz");
+	printf("\n");
 
 	return (0);
 }
