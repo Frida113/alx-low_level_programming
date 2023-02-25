@@ -5,18 +5,26 @@
  */
 int main(void)
 {
-	 int a = 0, b = 1, next = 0;
-	 int sum = 0;
-	 
-	 while (next < 4000000)
-	 {
-		 next = a + b;
-		 a = b;
-		 b = next;
+	int a = 0, b = 1, next = 0;
+	int sum = 0;
 
-		 if (next % 2 == 0)
-			 sum += next;
-	 }
-	 printf("%i\n", sum);
-	 return (0);
+	while (1)
+	{
+		next = a + b;
+		a = b;
+		b = next;
+
+		if (next % 2 == 0)
+		{
+			sum += next;
+		}
+
+		if (next > 4000000)
+		{
+			break;
+		}
+	}
+
+	printf("%i\n", sum);
+	return (0);
 }
