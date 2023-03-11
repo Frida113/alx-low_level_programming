@@ -3,9 +3,18 @@
  * _strcpy - Main Entry
  * @dest: input
  * @src: source
- * Return: 0
+ * Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	return (0);
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+
+	dest[i] = '\0';
+
+	return (dest);
 }

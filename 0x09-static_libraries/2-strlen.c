@@ -2,9 +2,13 @@
 /**
  * _strlen - Main Entry
  * @s: the string
- * Return: 0
+ * Return: length of @s
  */
 int _strlen(char *s)
 {
-	return (0);
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
 }

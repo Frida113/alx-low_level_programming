@@ -4,9 +4,17 @@
  * @dest: input
  * @src: source
  * @n: number
- * Return: 0
+ * Return: value of @dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (0);
+	int r = 0;
+	int i;
+
+	for (i = n; r < i; r++)
+	{
+		dest[r] = src[r];
+		n--;
+	}
+	return (dest);
 }

@@ -4,9 +4,26 @@
  * @dest: input
  * @src: source
  * @n: the number
- * Return: 0
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	return (0);
+	int i;
+
+	i = 0;
+
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+
+	i = i;
+
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }

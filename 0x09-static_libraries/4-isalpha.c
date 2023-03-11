@@ -2,9 +2,13 @@
 /**
  * _isalpha - Main Entry
  * @c: input
- * Return: 0
+ * Return: 1 if c is a letter, lowercase or uppercase 0 otherwise
  */
 int _isalpha(int c)
 {
-	return (0);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+
+		return (1);
+	else
+		return (0);
 }
