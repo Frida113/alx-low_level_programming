@@ -1,7 +1,19 @@
 #ifndef _LISTS_H_
 #define _LISTS_H_
 #include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ * struct listp_s - singly linked list of pointers
+ * @p: pointer to void
+ * @next: points to the next node
+ */
 
+typedef struct listp_s
+{
+	void *p;
+	struct listp_s *next;
+} listp_t;
 /**
  * struct listint_s - singly linked list
  * @n: integer
